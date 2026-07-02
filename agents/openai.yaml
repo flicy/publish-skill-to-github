@@ -1,0 +1,7 @@
+interface:
+  display_name: "Publish Skill to GitHub"
+  short_description: "整理并发布 Skill 包到 GitHub"
+  default_prompt: "Use $publish-skill-to-github to validate a local skill package, create a GitHub repository, and push it."
+
+policy:
+  allow_implicit_invocation: true
