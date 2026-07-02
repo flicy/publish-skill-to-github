@@ -1,0 +1,41 @@
+name: publish-skill-to-github
+version: 1.0.0
+type: instruction-skill
+entry: SKILL.md
+license: MIT
+summary:
+  zh: 把本地 Agent Skill 能力包整理、验证并发布到 GitHub。
+  en: Prepare, validate, and publish a local Agent Skill package to GitHub.
+description:
+  zh: 支持 README 整理、skill 校验、GitHub CLI 登录、仓库创建、提交推送、远端验证，以及 GitHub DNS/IP 超时 fallback。
+  en: Supports README polish, skill validation, GitHub CLI login, repository creation, commit and push, remote verification, and GitHub DNS/IP timeout fallback.
+inputs:
+  - name: skill_path
+    required: true
+    description:
+      zh: 要发布的 skill 目录或 SKILL.md 路径。
+      en: Skill directory or SKILL.md path to publish.
+  - name: github_owner
+    required: true
+    description:
+      zh: GitHub 用户名或组织名。
+      en: GitHub username or organization.
+  - name: repository_name
+    required: false
+    description:
+      zh: 目标仓库名；默认使用 SKILL.md 的 name。
+      en: Target repository name; defaults to the SKILL.md name.
+outputs:
+  - name: github_repository
+    description:
+      zh: 已创建或已更新的 GitHub 仓库 URL，以及本地/远端验证结果。
+      en: Created or updated GitHub repository URL plus local and remote verification results.
+permissions:
+  network: required
+  filesystem: required
+tags:
+  - github
+  - agent-skills
+  - skill-publishing
+  - codex
+  - claude-code
