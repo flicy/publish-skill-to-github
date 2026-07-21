@@ -101,7 +101,8 @@ publish-skill-to-github/
 ├── agents/
 │   └── openai.yaml
 └── scripts/
-    └── github_connect_proxy.py
+    ├── github_connect_proxy.py
+    └── scan_private.sh
 ```
 
 ## 安装
@@ -158,6 +159,14 @@ README: 参考成熟开源项目结构，中英双语。
 - 发布前必须检查私有路径、邮箱、token、客户资料和内部项目名。
 - 如果 Markdown 文档更新，保持中文和英文两个版本。
 - 如果临时启动 `github_connect_proxy.py`，登录和 push 完成后停止进程。
+
+## 相关 Skill
+
+| Skill | 用途 |
+|---|---|
+| [enterprise-company-research-agent](https://github.com/flicy/enterprise-company-research-agent) | 企业供应商、公司与产品深度调研 |
+| [wechat-publish-from-transcript](https://github.com/flicy/wechat-publish-from-transcript) | 把逐字稿变成公众号文章和跨平台内容包 |
+| [prepare-livestream-event](https://github.com/flicy/prepare-livestream-event) | 筹备线上直播活动，生成海报、文案和发布清单 |
 
 ## 许可证
 
@@ -264,7 +273,8 @@ publish-skill-to-github/
 ├── agents/
 │   └── openai.yaml
 └── scripts/
-    └── github_connect_proxy.py
+    ├── github_connect_proxy.py
+    └── scan_private.sh
 ```
 
 ## Installation
@@ -321,6 +331,14 @@ README: bilingual, open-source style.
 - Before publishing, scan for private paths, emails, tokens, customer data, and internal project names.
 - If Markdown docs are updated, keep both Chinese and English versions.
 - If `github_connect_proxy.py` is started temporarily, stop it after login and push finish.
+
+## Related Skills
+
+| Skill | Purpose |
+|---|---|
+| [enterprise-company-research-agent](https://github.com/flicy/enterprise-company-research-agent) | Enterprise supplier, company, and product research |
+| [wechat-publish-from-transcript](https://github.com/flicy/wechat-publish-from-transcript) | Turn transcripts into WeChat articles and cross-platform content packs |
+| [prepare-livestream-event](https://github.com/flicy/prepare-livestream-event) | Prepare livestream event launches with posters, copy, and publishing checklists |
 
 ## License
 
